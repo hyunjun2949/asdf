@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a5586b99e002d6f44a5844db48ba9761
+timeCreated: 1494142683
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Banbury
+  fontNames:
+  - Banbury
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

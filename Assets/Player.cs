@@ -17,17 +17,16 @@ public class Player : MonoBehaviour
    
 
 	void Update ()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-
-            Info.gauge += Info.clickup;
-        }
-      
+    {      
         if(Info.gauge>=Info.maxgauge)
         {
             Info.level += 1;
             Info.gauge = 0;
         }
 	}
+
+    public void GaugeUp()
+    {
+        Info.gauge += Info.clickup;
+    }
 }

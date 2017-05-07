@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8826e068c4bd1d54abcee8748330f5f4
+timeCreated: 1494142483
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sad Kropotkin Laugh
+  fontNames:
+  - Sad Kropotkin Laugh
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
