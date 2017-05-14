@@ -9,6 +9,11 @@ public class PlayerInfo
     public int clickup;
     public int gauge;
     public int maxgauge;
+
+    public int GetMaxGauge()
+    {
+        return maxgauge * level;
+    }
 }
 
 public class Player : MonoBehaviour
@@ -18,7 +23,7 @@ public class Player : MonoBehaviour
 
 	void Update ()
     {      
-        if(Info.gauge>=Info.maxgauge)
+        if(Info.gauge>=Info.GetMaxGauge())
         {
             Info.level += 1;
             Info.gauge = 0;

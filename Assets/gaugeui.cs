@@ -5,6 +5,7 @@ using UnityEngine;
 public class gaugeui : MonoBehaviour
 {
     public GameObject Player;
+    public float Height;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +15,9 @@ public class gaugeui : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
         Vector2 size = GetComponent<RectTransform>().sizeDelta;
-        size.x = Player.GetComponent<Player>().Info.gauge;
+        size.y = Height *
+            ((float)Player.GetComponent<Player>().Info.gauge /
+              Player.GetComponent<Player>().Info.GetMaxGauge()) ;
         GetComponent<RectTransform>().sizeDelta = size;
 
     }
