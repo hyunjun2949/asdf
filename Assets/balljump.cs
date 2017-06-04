@@ -30,7 +30,7 @@ public class balljump : MonoBehaviour
 
         }
         time += Time.deltaTime;
-        float scale = 1.25f - Mathf.Abs(0.25f - time);
+        float scale = 0.3f + 0.25f - Mathf.Abs(0.25f - time);
         transform.localScale = new Vector3(scale, scale, scale);
 
 
