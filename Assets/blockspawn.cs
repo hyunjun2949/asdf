@@ -8,10 +8,13 @@ public class blockspawn : MonoBehaviour
     public GameObject block;
     float YGap = 3.09f;
     public GameObject Topblock;
-	void Update ()
-
+    public GameObject GameOver;
+    void Update ()
     {
-
+        if(GameOver.activeSelf)
+        {
+            return;
+        }
         if (transform.position.y - Topblock.transform.position.y > YGap) 
         {
             GameObject newblock =Instantiate(block);

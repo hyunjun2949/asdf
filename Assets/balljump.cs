@@ -9,7 +9,7 @@ public enum State
 }
 public class balljump : MonoBehaviour
 {
-
+    public GameObject GameOver;
     public State state = State.Idle;
     float time;
     public void Update()
@@ -36,5 +36,13 @@ public class balljump : MonoBehaviour
 
 
 
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (state == State.Idle)
+        {
+            GameOver.SetActive(true);
+        }
     }
 }

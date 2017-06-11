@@ -7,13 +7,17 @@ public class block : MonoBehaviour {
     float time;
     public GameObject blo;
     float spawnTime;
+    public GameObject GameOver;
     void Start ()
     {
         spawnTime = Random.Range(1.0f, 2.5f);
 
     }
     void Update () {
-
+        if(GameOver.activeSelf)
+        {
+            return;
+        }
         time += Time.deltaTime;
         if (time >  spawnTime)
         {
